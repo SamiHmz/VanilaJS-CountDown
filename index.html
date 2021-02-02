@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Countdown</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Video-->
+    <video src="./time.mp4" autoplay loop muted></video>
+    <div class="video-overlay"></div>
+    <div class="video-background"></div>
+    <!--content-->
+    <div id="container">
+      <!--Form-->
+      <div id="from-container">
+        <form action="" id="count-down-form">
+          <h1>Create a Custom Countdown!</h1>
+          <div class="form-element">
+            <label for="title">Title</label>
+            <input
+              id="title"
+              type="text"
+              placeholder="what are you counting down to?"
+            />
+          </div>
+          <div class="form-element">
+            <label for="date">Date</label>
+            <input id="date" type="date" name="" id="" />
+          </div>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+      <!--Count down -->
+      <div id="count-down-container" hidden>
+        <div id="count-down">
+          <h1 id="count-down-title">Count Down</h1>
+          <div id="time-left">
+            <div class="box">
+              <h1>3</h1>
+              <h2>Days</h2>
+            </div>
+            <div class="box">
+              <h1>6</h1>
+              <h2>Hours</h2>
+            </div>
+            <div class="box">
+              <h1>45</h1>
+              <h2>Munites</h2>
+            </div>
+            <div class="box">
+              <h1>51</h1>
+              <h2>Seconds</h2>
+            </div>
+          </div>
+          <button id="reset" class="btn">Reset</button>
+        </div>
+      </div>
+      <div id="complete-container" hidden>
+        <div id="complete">
+          <h1 class="complete-title">Countdown complete!</h1>
+          <h2>finished on <span id="finished">31-10-2021</span></h2>
+          <button id="new-count-down" class="btn">New Countdown</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
